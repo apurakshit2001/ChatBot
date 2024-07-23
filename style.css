@@ -60,6 +60,7 @@ body {
     object-fit: cover;
     overflow: hidden;
     background: url(./img/image1.jpg);
+    box-shadow: 0px 3px 6px rgb(255, 255, 255); 
 }
 
 #toggleCheckbox:checked + label::after {
@@ -67,10 +68,12 @@ body {
     transform: translateX(-100%);
     background: linear-gradient(180deg, #777, #3a3a3a);
     color: white;
+    box-shadow: 0px 3px 6px rgb(227, 117, 117);
 }
 
 .toggleContainer label:active::after {
     width: 25px; 
+    box-shadow: 0px 3px 6px rgb(255, 255, 255);
 }
 /* Toggle ends */
 
