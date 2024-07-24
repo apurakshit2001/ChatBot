@@ -1,9 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const chatOutput = document.getElementById('chat-output');
-    const userInput = document.getElementById('user-input');
-    const sendButton = document.getElementById('send-button');
-    const languageSelect = document.getElementById('language-select');
-
     const botResponses = {
         english: {
             'hello': 'Hello! How can I help you today?',
@@ -148,6 +143,11 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     };
 
+    const chatOutput = document.getElementById('chat-output');
+    const userInput = document.getElementById('user-input');
+    const sendButton = document.getElementById('send-button');
+    const languageSelect = document.getElementById('language-select');
+
     let currentLanguage = 'english';  // Default language
 
     function appendMessage(sender, message) {
@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', function () {
             setTimeout(() => {
                 const botResponse = getBotResponse(message);
                 appendMessage('bot', botResponse);
-            }, 500);
+            }, 700);
         }
     }
 

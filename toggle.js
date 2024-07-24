@@ -4,11 +4,11 @@ document.addEventListener("DOMContentLoaded", () => {
     toggle.addEventListener("change", () => {
         let chatWindow = document.getElementById("chat-window");
         if (toggle.checked) {
-            chatWindow.style.backgroundColor = "black";
+            chatWindow.style.backgroundColor = "#3a3a3a"; //dark
 
         } else {
 
-            chatWindow.style.backgroundColor = "#f9f9f9";
+            chatWindow.style.backgroundColor = "#f9f9f9"; //light
 
 
 
